@@ -1,5 +1,5 @@
 import Feed from '@/components/FeedPage/Feed'
-import { FeedNavBar } from '@/components/NavBar/NavBar'
+import { FeedNavBar } from '@/components/NavBar/2023/NavBar'
 import { announcementsType, feedUsers, User } from '@/types/interface'
 import { prisma } from 'db'
 import { GetServerSidePropsContext } from 'next'

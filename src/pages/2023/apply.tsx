@@ -1,4 +1,4 @@
-import { AuthNavBar } from '@/components/NavBar/NavBar'
+import { AuthNavBar } from '@/components/NavBar/2023/NavBar'
 import dynamic from 'next/dynamic'
 import {
   GetServerSideProps,
@@ -38,7 +38,7 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
 }
 
 const ApplicationForm = dynamic(
-  () => import('../components/Form/ApplicationForm'),
+  () => import('../../components/Form/ApplicationForm'),
   {
     ssr: false
   }
@@ -71,7 +71,7 @@ const apply: NextPage = ({
             <div className="font-rubik text-purple_main mt-10 flex flex-col items-center">
               <p className="text-lg font-semibold md:text-xl">My Application</p>
               <p className="text-purple_300">Draft will be saved</p>
-              <ApplicationForm url={user?.image} />
+              <p>Deprecated Form, this was 2023 FullyHacks</p>
             </div>
           </ApplyAuth>
         </>

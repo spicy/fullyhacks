@@ -1,6 +1,6 @@
 import { announcementsType, feedUsers, User } from '@/types/interface'
 import React, { useState } from 'react'
-import { FeedSideBar } from '../NavBar/NavBar'
+import { FeedSideBar } from '../NavBar/2023/NavBar'
 import Announcements from './Announcements'
 import Events from './Events'
 import FAQs from './FAQs'

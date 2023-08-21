@@ -1,15 +1,15 @@
 import { companyType, FAQType, TeamType } from '@/types/interface'
 import Link from 'next/link'
 import React from 'react'
-import Bubbles from '../Bubble/Bubbles'
-import { LandingFooter } from '../Footer/Footer'
-import { NavBarLanding } from '../NavBar/NavBar'
-import About from './About/About'
-import CountDown from './CountDown/CountDown'
-import FAQ from './FAQ/FAQ'
-import Partners from './Partners/Partners'
-import Sponsors from './Sponsors/Sponsors'
-import Team from './Team/Team'
+import Bubbles from '../../Bubble/Bubbles'
+import { LandingFooter } from '../../Footer/Footer'
+import { NavBarLanding } from '../../NavBar/2023/NavBar'
+import About from '../About/About'
+import CountDown from '../CountDown/CountDown'
+import FAQ from '../FAQ/FAQ'
+import Partners from '../Partners/Partners'
+import Sponsors from '../Sponsors/Sponsors'
+import Team from '../Team/Team'
 
 interface LandingPageProps {
   companyData: companyType[]
@@ -31,7 +31,7 @@ const LandingPage: React.FC<LandingPageProps> = (props) => {
       <Bubbles />
       <CountDown />
       <div className="flex items-center mt-12 gap-8 text-md font-medium">
-        <Link href="/signin" className="">
+        <Link href="/" className="">
           <p className="cursor-pointer z-[11] mx-0 apply-btn">Apply</p>
         </Link>
         <a

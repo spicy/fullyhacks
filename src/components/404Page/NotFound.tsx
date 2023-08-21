@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { GenericNavBar } from '../NavBar/NavBar'
+import { GenericNavBar } from '../NavBar/2023/NavBar'
 
 const NotFound = () => {
   return (

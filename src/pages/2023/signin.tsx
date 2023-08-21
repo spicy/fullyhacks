@@ -1,5 +1,5 @@
 import Bubbles from '@/components/Bubble/Bubbles'
-import { GenericNavBar } from '@/components/NavBar/NavBar'
+import { GenericNavBar } from '@/components/NavBar/2023/NavBar'
 import PopUp from '@/components/PopUp/PopUp'
 import { GetServerSidePropsContext, NextPage } from 'next'
 import { getSession, signIn } from 'next-auth/react'
@@ -29,8 +29,8 @@ const signin: NextPage = () => {
     <section className="text-purple_main text-md font-rubik">
       <GenericNavBar />
       <PopUp
-        title="Before you continue"
-        content="FullyHacks only open to CSUF students 18 years old or older 🐘"
+        title="Warning"
+        content="You're browsing the old version of FullyHacks, please go back to the newest version"
         action="I understand"
       />
       <div className="relative mt-10 flex flex-col justify-center items-center mx-4">
@@ -46,7 +46,7 @@ const signin: NextPage = () => {
           </p>
           <p>Let&apos;s sign in and start your application</p>
         </div>
-        <button
+        {/* <button
           className="flex items-center rounded-md mt-12 p-4 bg-purple_300 text-[1.15rem] font-semibold font-mont"
           onClick={() => {
             setClick(true)
@@ -63,7 +63,7 @@ const signin: NextPage = () => {
               <BsGithub size={24} className="ml-4" />
             </>
           )}
-        </button>
+        </button> */}
       </div>
     </section>
   )

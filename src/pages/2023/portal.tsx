@@ -1,4 +1,4 @@
-import { AuthNavBar } from '@/components/NavBar/NavBar'
+import { AuthNavBar } from '@/components/NavBar/2023/NavBar'
 import UserPortal from '@/components/PortalPage/UserPortal'
 import { prisma } from 'db'
 import { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next'

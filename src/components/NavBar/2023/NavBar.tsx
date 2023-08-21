@@ -53,7 +53,7 @@ export const NavBarLanding: React.FC = () => {
     {
       id: 'portal',
       name: 'User Portal',
-      href: '/portal',
+      href: '/',
       logo: '/portal.svg',
       mobile: 24,
       desktop: 24

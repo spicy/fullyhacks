@@ -1,6 +1,6 @@
 import { Application } from '@/components/Admin/Applications/Application'
 import Applications from '@/components/Admin/Applications/Applications'
-import { AuthNavBar } from '@/components/NavBar/NavBar'
+import { AuthNavBar } from '@/components/NavBar/2023/NavBar'
 import { ApplicationType, User } from '@/types/interface'
 import { prisma } from 'db'
 import { GetServerSidePropsContext } from 'next'
